@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>shaders@point-vertex-id gl_vertexid - Details</title>
+    <link rel="stylesheet" href="../result.css">
+  </head>
+  <body>
+    <h1>Results for shaders@point-vertex-id gl_vertexid</h1>
+    <h2>Overview</h2>
+    <div>
+      <p><b>Result:</b> crash</p>
+    </div>
+    <p><a href="../index.html">Back to summary</a></p>
+    <h2>Details</h2>
+    <table>
+      <tr>
+        <th>Detail</th>
+        <th>Value</th>
+      </tr>
+      <tr>
+        <td>Returncode</td>
+        <td>-11</td>
+      </tr>
+      <tr>
+        <td>Time</td>
+        <td>0:00:00.230537</td>
+      </tr>
+      <tr>
+        <td>Stdout</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Stderr</td>
+        <td>
+          <pre>MESA: error: shader: MESA_SHADER_VERTEX
+MESA: error: source_blake3: {0xf2b0bbaf, 0x5e433558, 0xce673491, 0x4e99c390, 0xc67b97a6, 0x7864d7f9, 0xf605547a, 0x2dfe0f7c}
+MESA: error: name: GLSL2
+MESA: error: next_stage: MESA_SHADER_FRAGMENT
+MESA: error: inputs_read: 31
+MESA: error: outputs_written: 0-1,15
+MESA: error: system_values_read: 0x00000000&#39;00000000&#39;00000000&#39;00000200
+MESA: error: subgroup_size: 1
+MESA: error: bit_sizes_float: 0x20
+MESA: error: bit_sizes_int: 0x20
+MESA: error: first_ubo_is_default_ubo: true
+MESA: error: flrp_lowered: true
+MESA: error: needs_edge_flag: true
+MESA: error: inputs: 1
+MESA: error: outputs: 3
+MESA: error: uniforms: 7
+MESA: error: decl_var shader_in INTERP_MODE_NONE none highp vec4 VERT_ATTRIB_EDGEFLAG (VERT_ATTRIB_EDGEFLAG.xyzw, 0, 0)
+MESA: error: decl_var shader_out INTERP_MODE_NONE none highp vec4 VARYING_SLOT_POS (VARYING_SLOT_POS.xyzw, 0, 0)
+MESA: error: decl_var shader_out INTERP_MODE_NONE none highp vec4 VARYING_SLOT_COL0 (VARYING_SLOT_COL0.xyzw, 1, 0)
+MESA: error: decl_var shader_out INTERP_MODE_NONE none highp float VARYING_SLOT_EDGE (VARYING_SLOT_EDGE.x, 2, 0)
+MESA: error: decl_var ubo INTERP_MODE_NONE none vec4[7] uniform_0 (0, 0, 0)
+MESA: error: decl_function main () (entrypoint)
+MESA: error: 
+MESA: error: impl main {
+MESA: error:     con block b0:       // preds:
+MESA: error:     con 1      %0 = @preamble_start_ir3
+MESA: error:                     // succs: b1 b5
+MESA: error:     if %0 {
+MESA: error:         con block b1:       // preds: b0
+MESA: error:         div 1      %1 = @elect_any_ir3
+MESA: error:                         // succs: b2 b3
+MESA: error:         if %1 {
+MESA: error:             div block b2:       // preds: b1
+MESA: error:             con 32    %37 = load_const (0x00000000 = 0.000000)
+MESA: error:             con 32x2   %5 = @load_const_ir3 (%37 (0x0)) (base=16)
+MESA: error:             con 32     %6 = frcp %5.x
+MESA: error:                             @store_const_ir3 (%6) (base=0)
+MESA: error:             con 32     %7 = frcp %5.y
+MESA: error:                             @store_const_ir3 (%7) (base=1)
+MESA: error:                             @preamble_end_ir3
+MESA: error:                             // succs: b4
+MESA: error:         } else {
+MESA: error:             div block b3:  // preds: b1, succs: b4
+MESA: error:         }
+MESA: error:         con block b4:  // preds: b2 b3, succs: b6
+MESA: error:     } else {
+MESA: error:         con block b5:  // preds: b0, succs: b6
+MESA: error:     }
+MESA: error:     con block b6:       // preds: b4 b5
+MESA: error:     con 32     %8 = load_const (0x00000000 = 0.000000)
+MESA: error:     div 32     %9 = @load_input (%8 (0x0)) (base=0, range=1, component=0, dest_type=float32, io location=VERT_ATTRIB_EDGEFLAG slots=1)  // VERT_ATTRIB_EDGEFLAG
+MESA: error:     con 32    %10 = load_const (0x3f000000 = 0.500000)
+MESA: error:     con 32    %11 = load_const (0x40000000 = 2.000000)
+MESA: error:     con 32    %12 = load_const (0x3f800000 = 1.000000)
+MESA: error:     div 32    %13 = @load_vertex_id
+MESA: error:     con 32    %38 = load_const (0x00000001)
+MESA: error:     div 32    %20 = ishl %13, %38 (0x1)
+MESA: error:     div 32x2  %21 = @load_const_ir3 (%20) (base=18)
+MESA: error:     div 32x2  %41 = fadd %21, %10 (0.500000).xx
+MESA: error:     div 32x2  %42 = fmul %41, %11 (2.000000).xx
+MESA: error:     con 32    %27 = @load_const_ir3 (%8 (0x0)) (base=0)
+MESA: error:     con 32    %30 = @load_const_ir3 (%8 (0x0)) (base=1)
+MESA: error:     con 32    %32 = load_const (0xbf800000 = -1.000000)
+MESA: error:     div 32    %40 = ffma %42.x, %27, %32 (-1.000000)
+MESA: error:     div 32    %39 = ffma %42.y, %30, %32 (-1.000000)
+MESA: error:     div 32x4  %35 = vec4 %40, %39, %8 (0x0), %12 (0x3f800000)
+MESA: error:                     @store_output (%35, %8 (0x0)) (base=0, range=1, wrmask=xyzw, component=0, src_type=float32, io location=VARYING_SLOT_POS slots=1, xfb(), xfb2())  // VARYING_SLOT_POS
+MESA: error:     con 32x4  %36 = load_const (0x3f800000, 0x3f800000, 0x3f800000, 0x3f800000) = (1.000000, 1.000000, 1.000000, 1.000000)
+MESA: error:                     @store_output (%36 (1.000000, 1.000000, 1.000000, 1.000000), %8 (0x0)) (base=1, range=1, wrmask=xyzw, component=0, src_type=float32, io location=VARYING_SLOT_COL0 slots=1, xfb(), xfb2())  // VARYING_SLOT_COL0
+MESA: error:                     @store_output (%9, %8 (0x0)) (base=2, range=1, wrmask=x, component=0, src_type=float32, io location=VARYING_SLOT_EDGE slots=1, xfb(), xfb2())  // VARYING_SLOT_EDGE
+MESA: error: unknown vertex shader output name: VARYING_SLOT_EDGE
+MESA: error: 
+MESA: error: 
+MESA: error:                     // succs: b7
+MESA: error:     block b7:
+MESA: error: }
+MESA: error: 
+MESA: error: 
+MESA: error: shader: MESA_SHADER_VERTEX
+MESA: error: source_blake3: {0xf2b0bbaf, 0x5e433558, 0xce673491, 0x4e99c390, 0xc67b97a6, 0x7864d7f9, 0xf605547a, 0x2dfe0f7c}
+MESA: error: name: GLSL2
+MESA: error: next_stage: MESA_SHADER_FRAGMENT
+MESA: error: inputs_read: 31
+MESA: error: outputs_written: 0-1,15
+MESA: error: system_values_read: 0x00000000&#39;00000000&#39;00000000&#39;00000200
+MESA: error: subgroup_size: 1
+MESA: error: bit_sizes_float: 0x20
+MESA: error: bit_sizes_int: 0x20
+MESA: error: first_ubo_is_default_ubo: true
+MESA: error: flrp_lowered: true
+MESA: error: needs_edge_flag: true
+MESA: error: inputs: 1
+MESA: error: outputs: 3
+MESA: error: uniforms: 7
+MESA: error: decl_var shader_in INTERP_MODE_NONE none highp vec4 VERT_ATTRIB_EDGEFLAG (VERT_ATTRIB_EDGEFLAG.xyzw, 0, 0)
+MESA: error: VERT_ATTRIB_EDGEFLAG
+MESA: error: 
+MESA: error: decl_var shader_out INTERP_MODE_NONE none highp vec4 VARYING_SLOT_POS (VARYING_SLOT_POS.xyzw, 0, 0)
+MESA: error: VARYING_SLOT_POS
+MESA: error: 
+MESA: error: decl_var shader_out INTERP_MODE_NONE none highp vec4 VARYING_SLOT_COL0 (VARYING_SLOT_COL0.xyzw, 1, 0)
+MESA: error: VARYING_SLOT_COL0
+MESA: error: 
+MESA: error: decl_var shader_out INTERP_MODE_NONE none highp float VARYING_SLOT_EDGE (VARYING_SLOT_EDGE.x, 2, 0)
+MESA: error: VARYING_SLOT_EDGE
+MESA: error: 
+MESA: error: decl_var ubo INTERP_MODE_NONE none vec4[7] uniform_0 (0, 0, 0)
+MESA: error: uniform_0
+MESA: error: 
+MESA: error: decl_function main () (entrypoint)
+MESA: error: 
+MESA: error: impl main {
+MESA: error:     con block b0:       // preds:
+MESA: error:     con 1      %0 = @preamble_start_ir3
+MESA: error:                     // succs: b1 b5
+MESA: error:     if %0 {
+MESA: error:         con block b1:       // preds: b0
+MESA: error:         div 1      %1 = @elect_any_ir3
+MESA: error:                         // succs: b2 b3
+MESA: error:         if %1 {
+MESA: error:             div block b2:       // preds: b1
+MESA: error:             con 32    %37 = load_const (0x00000000 = 0.000000)
+MESA: error:             con 32x2   %5 = @load_const_ir3 (%37 (0x0)) (base=16)
+MESA: error:             con 32     %6 = frcp %5.x
+MESA: error:                             @store_const_ir3 (%6) (base=0)
+MESA: error:             con 32     %7 = frcp %5.y
+MESA: error:                             @store_const_ir3 (%7) (base=1)
+MESA: error:                             @preamble_end_ir3
+MESA: error:                             // succs: b4
+MESA: error:         } else {
+MESA: error:             div block b3:  // preds: b1, succs: b4
+MESA: error:         }
+MESA: error:         con block b4:  // preds: b2 b3, succs: b6
+MESA: error:     } else {
+MESA: error:         con block b5:  // preds: b0, succs: b6
+MESA: error:     }
+MESA: error:     con block b6:       // preds: b4 b5
+MESA: error:     con 32     %8 = load_const (0x00000000 = 0.000000)
+MESA: error:     div 32     %9 = @load_input (%8 (0x0)) (base=0, range=1, component=0, dest_type=float32, io location=VERT_ATTRIB_EDGEFLAG slots=1)  // VERT_ATTRIB_EDGEFLAG
+MESA: error:     con 32    %10 = load_const (0x3f000000 = 0.500000)
+MESA: error:     con 32    %11 = load_const (0x40000000 = 2.000000)
+MESA: error:     con 32    %12 = load_const (0x3f800000 = 1.000000)
+MESA: error:     div 32    %13 = @load_vertex_id
+MESA: error:     con 32    %38 = load_const (0x00000001)
+MESA: error:     div 32    %20 = ishl %13, %38 (0x1)
+MESA: error:     div 32x2  %21 = @load_const_ir3 (%20) (base=18)
+MESA: error:     div 32x2  %41 = fadd %21, %10 (0.500000).xx
+MESA: error:     div 32x2  %42 = fmul %41, %11 (2.000000).xx
+MESA: error:     con 32    %27 = @load_const_ir3 (%8 (0x0)) (base=0)
+MESA: error:     con 32    %30 = @load_const_ir3 (%8 (0x0)) (base=1)
+MESA: error:     con 32    %32 = load_const (0xbf800000 = -1.000000)
+MESA: error:     div 32    %40 = ffma %42.x, %27, %32 (-1.000000)
+MESA: error:     div 32    %39 = ffma %42.y, %30, %32 (-1.000000)
+MESA: error:     div 32x4  %35 = vec4 %40, %39, %8 (0x0), %12 (0x3f800000)
+MESA: error:                     @store_output (%35, %8 (0x0)) (base=0, range=1, wrmask=xyzw, component=0, src_type=float32, io location=VARYING_SLOT_POS slots=1, xfb(), xfb2())  // VARYING_SLOT_POS
+MESA: error:     con 32x4  %36 = load_const (0x3f800000, 0x3f800000, 0x3f800000, 0x3f800000) = (1.000000, 1.000000, 1.000000, 1.000000)
+MESA: error:                     @store_output (%36 (1.000000, 1.000000, 1.000000, 1.000000), %8 (0x0)) (base=1, range=1, wrmask=xyzw, component=0, src_type=float32, io location=VARYING_SLOT_COL0 slots=1, xfb(), xfb2())  // VARYING_SLOT_COL0
+MESA: error:                     @store_output (%9, %8 (0x0)) (base=2, range=1, wrmask=x, component=0, src_type=float32, io location=VARYING_SLOT_EDGE slots=1, xfb(), xfb2())  // VARYING_SLOT_EDGE
+MESA: error:                     // succs: b7
+MESA: error:     block b7:
+MESA: error: }
+MESA: error: 
+</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Environment</td>
+        <td>
+          <pre>PIGLIT_SOURCE_DIR=&#34;/usr/lib/piglit&#34; PIGLIT_PLATFORM=&#34;mixed_glx_egl&#34;</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>Command</td>
+        <td>
+          <pre>/usr/lib/piglit/bin/point-vertex-id gl_VertexID -auto -fbo</pre>
+        </td>
+      </tr>
+      <tr>
+        <td>dmesg</td>
+        <td>
+          <pre></pre>
+        </td>
+      </tr>
+    </table>
+    <p><a href="../index.html">Back to summary</a></p>
+  </body>
+</html>
