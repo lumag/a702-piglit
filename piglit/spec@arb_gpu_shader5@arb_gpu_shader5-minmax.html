@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_gpu_shader5@arb_gpu_shader5-minmax</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,17 +24,17 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.192142</td>
+        <td>0:00:00.104261</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>token                                               minimum    value
-GL_MAX_GEOMETRY_SHADER_INVOCATIONS                       32       32
-GL_MIN_FRAGMENT_INTERPOLATION_OFFSET                   -0.5     -0.5
-GL_MAX_FRAGMENT_INTERPOLATION_OFFSET                    0.5      0.5
-GL_FRAGMENT_INTERPOLATION_OFFSET_BITS                     4        4
-GL_MAX_VERTEX_STREAMS                                     4        4
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

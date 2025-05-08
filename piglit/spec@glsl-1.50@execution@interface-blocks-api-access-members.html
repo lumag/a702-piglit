@@ -9,7 +9,7 @@
     <h1>Results for spec@glsl-1.50@execution@interface-blocks-api-access-members</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,45 +24,17 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.234693</td>
+        <td>0:00:00.113960</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Failed to link: error: Transform feedback varying c undeclared.
-Failed to link: error: Transform feedback varying d undeclared.
-Failed to link: error: Transform feedback varying inst.c undeclared.
-Failed to link: error: Transform feedback varying inst.d undeclared.
-Failed to link: error: Transform feedback varying e undeclared.
-Failed to link: error: Transform feedback varying f undeclared.
-Failed to link: error: Transform feedback varying instArray.e undeclared.
-Failed to link: error: Transform feedback varying instArray.f undeclared.
-Failed to link: error: Transform feedback varying WithInstArray.e undeclared.
-Failed to link: error: Transform feedback varying WithInstArray.f undeclared.
-Failed to link: error: Transform feedback varying instArray[0].e undeclared.
-Failed to link: error: Transform feedback varying instArray[0].f undeclared.
-Failed to link: error: Transform feedback varying instArray[1].e undeclared.
-Failed to link: error: Transform feedback varying instArray[1].f undeclared.
-Failed to link: error: Transform feedback varying instArray[0].g[0] undeclared.
-Failed to link: error: Transform feedback varying instArray[0].g[1] undeclared.
-Failed to link: error: Transform feedback varying WithInstArray[0].g[3] has index 3, but the array size is 3.
-Failed to link: error: Transform feedback varying instArray[1].g[0] undeclared.
-Failed to link: error: Transform feedback varying instArray[1].g[1] undeclared.
-Failed to link: error: Transform feedback varying instArray[1].g[2] undeclared.
-Name: a		Type: GL_FLOAT
-Name: b		Type: (unrecognized enum: 0x8B51)
-Name: WithInst.c		Type: GL_FLOAT
-Name: WithInst.d		Type: (unrecognized enum: 0x8B51)
-Name: WithInstArray[0].e		Type: GL_FLOAT
-Name: WithInstArray[0].f		Type: (unrecognized enum: 0x8B51)
-Name: WithInstArray[1].e		Type: GL_FLOAT
-Name: WithInstArray[1].f		Type: (unrecognized enum: 0x8B51)
-Name: WithInstArray[0].g[0]		Type: GL_FLOAT
-Name: WithInstArray[0].g[1]		Type: GL_FLOAT
-Name: WithInstArray[0].g[2]		Type: GL_FLOAT
-Name: WithInstArray[1].g[0]		Type: GL_FLOAT
-Name: WithInstArray[1].g[1]		Type: GL_FLOAT
-Name: WithInstArray[1].g[2]		Type: GL_FLOAT
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

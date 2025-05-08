@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_viewport_array@minmax</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,20 +24,17 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.119816</td>
+        <td>0:00:00.103351</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>token                                               minimum    value
-GL_MAX_VIEWPORT_DIMS[0]                                1024    16384
-GL_MAX_VIEWPORT_DIMS[1]                                 768    16384
-GL_MAX_VIEWPORTS                                         16       16
-GL_VIEWPORT_SUBPIXEL_BITS                                 0        0
-GL_VIEWPORT_BOUNDS_RANGE[0]                        -16384.0 -32768.0
-GL_VIEWPORT_BOUNDS_RANGE[1]                         16383.0  32767.0
-GL_LAYER_PROVOKING_VERTEX				      GL_UNDEFINED_VERTEX
-GL_VIEWPORT_INDEX_PROVOKING_VERTEX			      GL_UNDEFINED_VERTEX
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: eglCreateContext failed with error EGL_BAD_MATCH(0x3009)
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: eglCreateContext failed with error EGL_BAD_MATCH(0x3009)
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

@@ -9,7 +9,7 @@
     <h1>Results for spec@!opengl 3.2@layered-rendering@clear-color-mismatched-layer-count</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,37 +24,17 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.387068</td>
+        <td>0:00:00.159890</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Clearing each layer individually
-Probing texture 0, layer 0
-Probing texture 0, layer 1
-Probing texture 0, layer 2
-Probing texture 0, layer 3
-Probing texture 1, layer 0
-Probing texture 1, layer 1
-Probing texture 1, layer 2
-Probing texture 1, layer 3
-Probing texture 1, layer 4
-Probing texture 1, layer 5
-Probing texture 1, layer 6
-Probing texture 1, layer 7
-Clearing all layers of both textures at once
-Probing texture 0, layer 0
-Probing texture 0, layer 1
-Probing texture 0, layer 2
-Probing texture 0, layer 3
-Probing texture 1, layer 0
-Probing texture 1, layer 1
-Probing texture 1, layer 2
-Probing texture 1, layer 3
-Probing texture 1, layer 4
-Probing texture 1, layer 5
-Probing texture 1, layer 6
-Probing texture 1, layer 7
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

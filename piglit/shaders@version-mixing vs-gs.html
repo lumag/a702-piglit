@@ -9,7 +9,7 @@
     <h1>Results for shaders@version-mixing vs-gs</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,47 +24,17 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.267560</td>
+        <td>0:00:00.127032</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Testing versions 110 and 110: Not tested (GS requires GLSL 1.50).
-Testing versions 110 and 120: Not tested (GS requires GLSL 1.50).
-Testing versions 110 and 130: Not tested (GS requires GLSL 1.50).
-Testing versions 110 and 140: Not tested (GS requires GLSL 1.50).
-Testing versions 110 and 150: Success.
-Testing versions 110 and 330: Success.
-Testing versions 120 and 110: Not tested (GS requires GLSL 1.50).
-Testing versions 120 and 120: Not tested (GS requires GLSL 1.50).
-Testing versions 120 and 130: Not tested (GS requires GLSL 1.50).
-Testing versions 120 and 140: Not tested (GS requires GLSL 1.50).
-Testing versions 120 and 150: Success.
-Testing versions 120 and 330: Success.
-Testing versions 130 and 110: Not tested (GS requires GLSL 1.50).
-Testing versions 130 and 120: Not tested (GS requires GLSL 1.50).
-Testing versions 130 and 130: Not tested (GS requires GLSL 1.50).
-Testing versions 130 and 140: Not tested (GS requires GLSL 1.50).
-Testing versions 130 and 150: Success.
-Testing versions 130 and 330: Success.
-Testing versions 140 and 110: Not tested (GS requires GLSL 1.50).
-Testing versions 140 and 120: Not tested (GS requires GLSL 1.50).
-Testing versions 140 and 130: Not tested (GS requires GLSL 1.50).
-Testing versions 140 and 140: Not tested (GS requires GLSL 1.50).
-Testing versions 140 and 150: Success.
-Testing versions 140 and 330: Success.
-Testing versions 150 and 110: Not tested (GS requires GLSL 1.50).
-Testing versions 150 and 120: Not tested (GS requires GLSL 1.50).
-Testing versions 150 and 130: Not tested (GS requires GLSL 1.50).
-Testing versions 150 and 140: Not tested (GS requires GLSL 1.50).
-Testing versions 150 and 150: Success.
-Testing versions 150 and 330: Success.
-Testing versions 330 and 110: Not tested (GS requires GLSL 1.50).
-Testing versions 330 and 120: Not tested (GS requires GLSL 1.50).
-Testing versions 330 and 130: Not tested (GS requires GLSL 1.50).
-Testing versions 330 and 140: Not tested (GS requires GLSL 1.50).
-Testing versions 330 and 150: Success.
-Testing versions 330 and 330: Success.
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

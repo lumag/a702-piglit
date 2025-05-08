@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_timer_query@timestamp-get</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> fail</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,23 +20,24 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:02.402959</td>
+        <td>0:00:01.254362</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>glGet overhead: 25 us
-glQuery overhead: 309 us
+          <pre>glGet overhead: 36 us
+glQuery overhead: 968 us
 Test: first glQuery, then glGet
 Test: first glGet, then glQuery
 Test: wall clock time via glQuery
-GL_TIMESTAMP drift of approx. 1143184 ns/sec
-Test: wall clock time via glGet
-GL_TIMESTAMP drift of approx. 1557655 ns/sec
+GL_TIMESTAMP 1 = 87578 us
+GL_TIMESTAMP 2 = 51040 us
+delta  = -36538 us (expect &gt;= 1000112 us)
+piglit: error: GL_TIMESTAMP drift of 1036533897 ns/sec, greater than 3000000 ns/sec
 </pre>
         </td>
       </tr>

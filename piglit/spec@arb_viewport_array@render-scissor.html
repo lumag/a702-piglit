@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_viewport_array@render-scissor</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,63 +20,21 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.267442</td>
+        <td>0:00:00.192304</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Probe color at (1,1)
-  Expected: 255 255 255 255
-  Observed: 127 76 229 255
-Wrong color for viewport i,j 0 0
-Probe color at (1,54)
-  Expected: 127 127 127 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 0 1
-Probe color at (1,107)
-  Expected: 85 85 85 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 0 2
-Probe color at (81,1)
-  Expected: 63 63 63 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 1 0
-Probe color at (81,54)
-  Expected: 51 51 51 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 1 1
-Probe color at (81,107)
-  Expected: 42 42 42 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 1 2
-Probe color at (1,1)
-  Expected: 255 255 255 255
-  Observed: 255 255 0 255
-Wrong color for viewport i,j 0 0
-Probe color at (1,54)
-  Expected: 127 127 127 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 0 1
-Probe color at (1,107)
-  Expected: 85 85 85 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 0 2
-Probe color at (81,1)
-  Expected: 63 63 63 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 1 0
-Probe color at (81,54)
-  Expected: 51 51 51 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 1 1
-Probe color at (81,107)
-  Expected: 42 42 42 255
-  Observed: 0 0 0 0
-Wrong color for viewport i,j 1 2
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: eglCreateContext failed with error EGL_BAD_MATCH(0x3009)
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: eglCreateContext failed with error EGL_BAD_MATCH(0x3009)
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

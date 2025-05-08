@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_compute_variable_group_size@minmax</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,20 +24,17 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.178701</td>
+        <td>0:00:00.102720</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>token                                               minimum    value
-GL_MAX_COMPUTE_VARIABLE_GROUP_SIZE_ARB[0]               512     1024
-GL_MAX_COMPUTE_VARIABLE_GROUP_SIZE_ARB[1]               512     1024
-GL_MAX_COMPUTE_VARIABLE_GROUP_SIZE_ARB[2]                64       64
-GL_MAX_COMPUTE_VARIABLE_GROUP_INVOCATIONS_ARB           512     1024
-GL_MAX_COMPUTE_WORK_GROUP_SIZE[0]                      1024     1024
-GL_MAX_COMPUTE_WORK_GROUP_SIZE[1]                      1024     1024
-GL_MAX_COMPUTE_WORK_GROUP_SIZE[2]                        64       64
-GL_MAX_COMPUTE_WORK_GROUP_INVOCATIONS                  1024     1024
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.3 Core Context
+piglit: info: Falling back to GL 3.3 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.3 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

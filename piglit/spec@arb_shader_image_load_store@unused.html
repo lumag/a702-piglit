@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_shader_image_load_store@unused</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,12 +24,15 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.460067</td>
+        <td>0:00:00.123406</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre></pre>
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Failed to create any GL context
+</pre>
         </td>
       </tr>
       <tr>

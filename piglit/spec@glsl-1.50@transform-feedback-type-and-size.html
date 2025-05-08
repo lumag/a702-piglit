@@ -9,7 +9,7 @@
     <h1>Results for spec@glsl-1.50@transform-feedback-type-and-size</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,35 +20,21 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.228816</td>
+        <td>0:00:00.099662</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Incorrect data for output 0.  Expected 1.000000, got 0.000000.
-Incorrect data for output 1.  Expected 2.000000, got 0.000000.
-Incorrect data for output 2.  Expected 3.000000, got 0.000000.
-Incorrect data for output 3.  Expected 4.000000, got 0.000000.
-Incorrect data for output 4.  Expected 5.000000, got 0.000000.
-Incorrect data for output 5.  Expected 6.000000, got 0.000000.
-Incorrect data for output 6.  Expected 7.000000, got 0.000000.
-Incorrect data for output 7.  Expected 8.000000, got 0.000000.
-Incorrect data for output 8.  Expected 9.000000, got 0.000000.
-Incorrect data for output 9.  Expected 10.000000, got 0.000000.
-Incorrect data for output 10.  Expected 11.000000, got 0.000000.
-Incorrect data for output 11.  Expected 12.000000, got 0.000000.
-Incorrect data for output 12.  Expected 13.000000, got 0.000000.
-Incorrect data for output 13.  Expected 14.000000, got 0.000000.
-Incorrect data for output 14.  Expected 15.000000, got 0.000000.
-Incorrect data for output 15.  Expected 16.000000, got 0.000000.
-Incorrect data for output 16.  Expected 17.000000, got 0.000000.
-Incorrect data for output 17.  Expected 18.000000, got 0.000000.
-Incorrect data for output 18.  Expected 19.000000, got 0.000000.
-Incorrect data for output 19.  Expected 20.000000, got 0.000000.
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_program_interface_query@arb_program_interface_query-getprogramresourceindex</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,16 +20,18 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.355824</td>
+        <td>0:00:00.157851</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Invalid index for &#39;vs_input2&#39;: expected INVALID_INDEX but got 0
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

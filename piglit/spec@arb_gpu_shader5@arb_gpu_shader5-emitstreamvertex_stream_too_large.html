@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_gpu_shader5@arb_gpu_shader5-emitstreamvertex_stream_too_large</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -24,12 +24,18 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.319607</td>
+        <td>0:00:00.125282</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre></pre>
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Falling back to GL 3.2 compatibility context
+piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Compatibility Context
+piglit: info: Failed to create any GL context
+</pre>
         </td>
       </tr>
       <tr>

@@ -9,7 +9,7 @@
     <h1>Results for spec@!opengl 3.2@gl-3.2-adj-prims pv-first</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,43 +20,18 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.368215</td>
+        <td>0:00:00.151072</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Transform Feedback Failure for GL_TRIANGLES_ADJACENCY, prim 0 wrong color
-Expected 1, 0.2, 0, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 0 wrong color
-Expected 1, 0.2, 0, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 1 wrong color
-Expected 0.2, 0.2, 0.00784314, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 2 wrong color
-Expected 0.2, 1, 0.0156863, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 3 wrong color
-Expected 1, 1, 0.0235294, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 4 wrong color
-Expected 1, 0.5, 0.0313726, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 5 wrong color
-Expected 0.7, 1, 0.0392157, 0
-Found 0, 0, 0, 0
-Transform Feedback Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 6 wrong color
-Expected 1, 1, 0.0470588, 0
-Found 0, 0, 0, 0
-Failure for GL_LINES_ADJACENCY, prim 0 wrong color at (100,87)
-Failure for GL_LINE_STRIP_ADJACENCY, prim 0 wrong color at (262,100)
-Failure for GL_TRIANGLES_ADJACENCY, prim 0 wrong color at (500,125)
-Failure for GL_TRIANGLE_STRIP_ADJACENCY, prim 0 wrong color at (633,91)
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>

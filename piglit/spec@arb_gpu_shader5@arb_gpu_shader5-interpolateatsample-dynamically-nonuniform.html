@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_gpu_shader5@arb_gpu_shader5-interpolateatsample-dynamically-nonuniform</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> fail</p>
+      <p><b>Result:</b> skip</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,23 +20,18 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>1</td>
+        <td>0</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.291449</td>
+        <td>0:00:00.096483</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>Dynamically uniform coords at     (0,0): 0.375000,0.125000 0.875000,0.375000 0.125000,0.625000 0.625000,0.875000
-Dynamically non-uniform coords at (0,0): 0.375000,0.125000 0.875000,0.375000 0.125000,0.625000 0.625000,0.875000
-Dynamically uniform coords at     (1,0): 0.375000,0.125000 0.875000,0.375000 0.125000,0.625000 0.625000,0.875000
-Dynamically non-uniform coords at (1,0): 0.875000,0.375000 0.375000,0.125000 0.625000,0.875000 0.125000,0.625000
-Dynamically uniform coords at     (0,1): 0.375000,0.125000 0.875000,0.375000 0.125000,0.625000 0.625000,0.875000
-Dynamically non-uniform coords at (0,1): 0.125000,0.625000 0.625000,0.875000 0.375000,0.125000 0.875000,0.375000
-Dynamically uniform coords at     (1,1): 0.375000,0.125000 0.875000,0.375000 0.125000,0.625000 0.625000,0.875000
-Dynamically non-uniform coords at (1,1): 0.625000,0.875000 0.125000,0.625000 0.875000,0.375000 0.375000,0.125000
+          <pre>piglit: error: waffle_context_create failed due to WAFFLE_ERROR_UNKNOWN: glXCreateContextAttribsARB failed
+piglit: error: Failed to create waffle_context for OpenGL 3.2 Core Context
+piglit: info: Failed to create any GL context
 </pre>
         </td>
       </tr>
