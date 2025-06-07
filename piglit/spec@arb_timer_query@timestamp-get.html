@@ -24,20 +24,18 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:01.254362</td>
+        <td>0:00:00.284690</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre>glGet overhead: 36 us
-glQuery overhead: 968 us
+          <pre>glGet overhead: 35 us
+glQuery overhead: 250 us
 Test: first glQuery, then glGet
 Test: first glGet, then glQuery
-Test: wall clock time via glQuery
-GL_TIMESTAMP 1 = 87578 us
-GL_TIMESTAMP 2 = 51040 us
-delta  = -36538 us (expect &gt;= 1000112 us)
-piglit: error: GL_TIMESTAMP drift of 1036533897 ns/sec, greater than 3000000 ns/sec
+time 1 = 2391323 us
+time 2 = 2398181 us
+too big difference
 </pre>
         </td>
       </tr>

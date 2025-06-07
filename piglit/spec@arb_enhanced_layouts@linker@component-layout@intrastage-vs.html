@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_enhanced_layouts@linker@component-layout@intrastage-vs</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> fail</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,22 +20,29 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.228622</td>
+        <td>0:00:00.269747</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre></pre>
+          <pre>Test failure on line 43
+</pre>
         </td>
       </tr>
       <tr>
         <td>Stderr</td>
         <td>
-          <pre></pre>
+          <pre>Failed to link:
+error: Invalid location 0 in vertex shader
+
+Failed to link:
+error: Invalid location 0 in vertex shader
+
+</pre>
         </td>
       </tr>
       <tr>

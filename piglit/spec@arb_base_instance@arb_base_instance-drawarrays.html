@@ -9,7 +9,7 @@
     <h1>Results for spec@arb_base_instance@arb_base_instance-drawarrays</h1>
     <h2>Overview</h2>
     <div>
-      <p><b>Result:</b> pass</p>
+      <p><b>Result:</b> fail</p>
     </div>
     <p><a href="../index.html">Back to summary</a></p>
     <h2>Details</h2>
@@ -20,22 +20,27 @@
       </tr>
       <tr>
         <td>Returncode</td>
-        <td>0</td>
+        <td>1</td>
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.626933</td>
+        <td>0:00:00.269748</td>
       </tr>
       <tr>
         <td>Stdout</td>
         <td>
-          <pre></pre>
+          <pre>Probe color at (79,320)
+  Expected: 0.000000 1.000000 0.000000 1.000000
+  Observed: 0.000000 0.000000 0.000000 0.000000
+</pre>
         </td>
       </tr>
       <tr>
         <td>Stderr</td>
         <td>
-          <pre></pre>
+          <pre>arb_base_instance-drawarrays: instance 0 failed to draw correctly
+arb_base_instance-drawarrays: color instance divisor = 1  base = 1
+</pre>
         </td>
       </tr>
       <tr>

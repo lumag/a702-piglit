@@ -24,7 +24,7 @@
       </tr>
       <tr>
         <td>Time</td>
-        <td>0:00:00.127348</td>
+        <td>0:00:00.109466</td>
       </tr>
       <tr>
         <td>Stdout</td>
@@ -160,9 +160,6 @@ Driver config: &lt;?xml version=&#34;1.0&#34; standalone=&#34;yes&#34;?&gt;
       &lt;option name=&#34;force_compat_shaders&#34; type=&#34;bool&#34; default=&#34;false&#34;&gt;
         &lt;description lang=&#34;en&#34; text=&#34;Force OpenGL compatibility shaders&#34;/&gt;
       &lt;/option&gt;
-      &lt;option name=&#34;reuse_gl_names&#34; type=&#34;int&#34; default=&#34;-1&#34; valid=&#34;-1:1&#34;&gt;
-        &lt;description lang=&#34;en&#34; text=&#34;GL names reuse: 1=enable, 0=disable, -1=default&#34;/&gt;
-      &lt;/option&gt;
       &lt;option name=&#34;force_gl_map_buffer_synchronized&#34; type=&#34;bool&#34; default=&#34;false&#34;&gt;
         &lt;description lang=&#34;en&#34; text=&#34;Override GL_MAP_UNSYNCHRONIZED_BIT.&#34;/&gt;
       &lt;/option&gt;
@@ -237,6 +234,21 @@ Driver config: &lt;?xml version=&#34;1.0&#34; standalone=&#34;yes&#34;?&gt;
       &lt;/option&gt;
       &lt;option name=&#34;force_integer_tex_nearest&#34; type=&#34;bool&#34; default=&#34;false&#34;&gt;
         &lt;description lang=&#34;en&#34; text=&#34;Force integer textures to use nearest filtering&#34;/&gt;
+      &lt;/option&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;description lang=&#34;en&#34; text=&#34;Miscellaneous&#34;/&gt;
+      &lt;option name=&#34;disable_conservative_lrz&#34; type=&#34;bool&#34; default=&#34;false&#34;&gt;
+        &lt;description lang=&#34;en&#34; text=&#34;Disable conservative LRZ&#34;/&gt;
+      &lt;/option&gt;
+  &lt;/section&gt;
+  &lt;section&gt;
+    &lt;description lang=&#34;en&#34; text=&#34;Debugging&#34;/&gt;
+      &lt;option name=&#34;disable_throttling&#34; type=&#34;bool&#34; default=&#34;false&#34;&gt;
+        &lt;description lang=&#34;en&#34; text=&#34;Disable throttling on first batch after flush&#34;/&gt;
+      &lt;/option&gt;
+      &lt;option name=&#34;dual_color_blend_by_location&#34; type=&#34;bool&#34; default=&#34;false&#34;&gt;
+        &lt;description lang=&#34;en&#34; text=&#34;Identify dual color blending sources by location rather than index&#34;/&gt;
       &lt;/option&gt;
   &lt;/section&gt;
 &lt;/driinfo&gt;
